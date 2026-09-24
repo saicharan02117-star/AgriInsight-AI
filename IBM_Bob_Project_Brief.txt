@@ -1,0 +1,46 @@
+AGRIINSIGHT AI - IBM BOB PROJECT BRIEF
+
+Project: AgriInsight AI - AI-Powered Crop Yield & Farm Decision Analytics Platform
+Internship: AICTE | IBM SkillsBuild - Data Analytics with AI Internship 2026
+Student: Thodupunuri Sai Charan
+
+PURPOSE
+Use historical crop, climate and agricultural-input data to produce clear KPIs, exploratory data analysis, validated yield prediction and evidence-linked decision-support notes. The project should move from raw data to an understandable decision, not only to charts or a UI.
+
+DATASET
+Primary dataset: Crop Yield Prediction Dataset
+Source: https://www.kaggle.com/datasets/patelris/crop-yield-prediction-dataset
+Main fields: Area, Item, Year, average_rain_fall_mm_per_year, pesticides_tonnes, avg_temp, hg/ha_yield
+
+PROJECT FILES TO REVIEW
+- AgriInsight_AI.ipynb
+- AgriInsight_AI.py
+- requirements.txt
+- README.md
+- AgriInsight_AI_Project_Report.docx
+- yield_df.csv or the referenced dataset source
+
+IBM BOB REVIEW TASKS
+1. Confirm the problem statement, KPIs and project scope match the dataset.
+2. Review the data-cleaning logic and check that required columns, missing values, duplicates and invalid numeric values are handled transparently.
+3. Review EDA and visualizations for crop-level, area-level and time-based trends.
+4. Review the machine-learning pipeline: Linear Regression baseline, Random Forest Regressor, one-hot encoding, numeric preprocessing and held-out test split.
+5. Verify that MAE, RMSE and R2 are computed from the held-out test set and are not hard-coded.
+6. Review the reliability gate and decision-support rules.
+7. Check requirements.txt for necessary dependencies and consistency with the code.
+8. Check README.md and the project report for consistency with the current project files.
+9. Do not invent soil variables, fertilizer doses or pesticide doses that are absent from the dataset.
+10. Keep correlation statements exploratory; do not present correlation as causation.
+
+APPROVAL WORKFLOW
+First return a short plan and a list of proposed changes. Do not rewrite project files immediately. Ask for approval before each material change. After approval, provide only the revised file(s) and a short explanation of what changed.
+
+FINAL SUBMISSION CHECK
+Verify that the final package contains the code file, requirements.txt, project report, README and a GitHub-ready repository structure.
+
+NOTE
+The Streamlit app also generates a live Bob-ready brief from the current cleaned dataset and model-validation results. Python remains the reproducible source of truth for analytics, model metrics and predictions.
+
+
+PROJECT-LEVEL BOB SKILL
+The repository includes .bob/skills/agriinsight-review/SKILL.md. In IBM Bob Advanced mode, use `use_skill agriinsight-review` if the skill is not activated automatically. The skill requires a plan-first, approval-before-change review and checks dataset fidelity, EDA, ML validation, dependencies and documentation consistency.
